@@ -1,0 +1,80 @@
+html {
+    font-family: "Ubuntu";
+}
+
+/*---Intro-----*/
+.title, .container-fluid, .navbar {
+    background-color: #0984e3;
+}
+
+.nav-img {
+    width: 12%;
+    height: 12%;
+    padding: 0;
+    margin: 0;
+}
+
+.container-fluid {
+    padding: 3% 15% 3%;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: Montserrat;
+    font-weight: normal;
+}
+
+.smart-scroll {
+    position: fixed;
+    z-index: 1030;
+}
+
+.scrolled-down {
+    transform: translateY(-100%);
+    transition: all 1s ease-in-out;
+}
+
+.scrolled-up {
+    transform: translateY(0);
+    transition: all 1s ease-in-out;
+}
+
+/*--footer--*/
+.footer {
+    background-color: #0984e3;
+    text-align: center;
+    padding: 7% 15% 7% 15%;
+}
+
+.f-link {
+    text-decoration: none;
+    color: black;
+}
+
+.f-link:hover {
+    color: white;
+}
+
+.f-f:hover {
+    color: white;
+}
+
+.f-f {
+    padding: 1%;
+}
