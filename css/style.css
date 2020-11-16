@@ -255,6 +255,10 @@ h2 {
     font-size: 2rem;
 }
 
+.testimonials-text {
+    font-size: 1.5rem;
+}
+
 .services {
     padding-bottom: 2%;
 }
@@ -323,4 +327,30 @@ h2 {
     font-size: 1.5rem;
     font-weight: 550;
     color: white;
+}
+
+@media (max-width: 900px) {
+    .left1 {
+        text-align: left;
+    }
+
+    .right1 {
+        text-align: left;
+    }
+
+    .right2 {
+        text-align: right;
+    }
+
+    .left2 {
+        text-align: right;
+    }
+
+    .red {
+        display: block;
+    }
+
+    .firm-name {
+        display: block;
+    }
 }

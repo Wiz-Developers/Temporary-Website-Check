@@ -1,3 +1,15 @@
 .blog {
     padding: 17% 15% 7%;
 }
+
+@media (max-width: 1025px) {
+    .blog {
+        padding: 19% 15% 7%;
+    }
+}
+
+@media (max-width: 900px) {
+    .blog {
+        padding: 22% 15% 7%;
+    }
+}
