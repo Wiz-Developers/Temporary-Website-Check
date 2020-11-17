@@ -14,11 +14,21 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
+    <SCRIPT SRC='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></SCRIPT>
+    <SCRIPT>
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [
+                    ['$', '$'],
+                    ['\\(', '\\)']
+                ]
+            }
+        })
+    </SCRIPT>
     <link rel="stylesheet" href="blogs-css/style.css">
     <link rel="stylesheet" href="blogs-css/blog.css">
     <link rel="stylesheet" href="blogs-css/default.css">
-
+    <link rel="stylesheet" href="blogs-css/blog1.css">
 </head>
 
 <body>
@@ -26,7 +36,7 @@
         <div class="container-fluid smart-scroll nav-div">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="index.html">
-                    <img class="nav-img" src="images/logo.png"><span class="small-hide">Wiz Developers</span>
+                    <img class="nav-img" src="blogs-images/logo.png"><span class="small-hide">Wiz Developers</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -53,38 +63,89 @@
 
     </section>
     <section class="blog-content">
-        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h1>
+        <h1 class="center"><strong>BMI CALCULATOR APPLICATION</strong></h1>
         <div class="blog-content-div">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <div class="img">
-                <img src="blogs-images/sample.jpg" class="image">
-                <p class="image-info">Info about image</p>
+            <p>BMI or Body Mass Index, in the Body Mass Index, is one of the most well-known methods of measuring obesity.
+                The result of BMI is a number that determines the possibility of health risk based on your body height and weight</p>
+            <p>The BMI formula is:
+                $$ BMI = {weight (kg) \over height^2 (m^2)}.$$</p>
+            <hr>
+            <h3 class="center"><strong>HOW TO USE THE MOBILE APPLICATION</strong></h3>
+            <h5 class="center">Download the BMI Calculator App made by Wiz Developers from PlayStore.</h5>
+            <div class="bottom-download download-app-blog">
+                <a href="https://play.google.com/store/apps/details?id=co.wizdevelopers.bmicalculator" target="_blank">
+                    <button type="button" class="btn btn-dark btn-lg download-bt"><i class="fab fa-google-play"> Download</i></button>
+                </a>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
+            <hr>
+            <p>Select the gender from given buttons and further set the weight and height through the provided User Interface(UI) in the beautiful mobile application created by WizDevelopers with the help of flutter and Android Studio like technology
+                .</p>
+            <div class="img">
+                <img src="blogs-images/bmi-1.jpeg" class="image">
+                <p class="image-info"></p>
+            </div>
+            <p>Now, click on "Calulate" Button. This will then show BMI and status of BMI according to the scale.</p>
+            <div class="img">
+                <img src="blogs-images/bmi-2.jpeg" class="image">
+                <p class="image-info"></p>
+            </div>
+            <hr>
+            <p>
+                <strong>WHY TO KEEP CHECK OF BMI ?</strong>
+                The BMI calculator application serves as a precise tool for most populations to detect malnutrition, healthy weight, overweight or obesity. This allows you to avoid possible health related problems resulting from your weight. For
+                standard
+                BMI categories for adults, see the table below.
 
-        <span>Written by <a href="linkedin">Het Patel</a></span>
+            <table class="table">
+                <thead>
+                    <tr class="table-primary">
+                        <th scope="col">Range</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Risk</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Less Than 18.5</th>
+                        <td>Underweight</td>
+                        <td>Moderate-High</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">18.5-29.4</th>
+                        <td>Normal</td>
+                        <td>NONE</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">25.0-29.9</th>
+                        <td>Overweightt</td>
+                        <td>Moderate</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">More Than 29.9</th>
+                        <td>Obese</td>
+                        <td>High</td>
+                    </tr>
+                </tbody>
+            </table>
+            Though, BMI results are not quite accurate because they are generally valid data of an average person. BMI can be distorted for children, young people under 18, pregnant women,elderly and athletes.
+
+            </p>
+        </div>
+        <hr>
+        <span>Written by <a href="https://www.linkedin.com/in/krutarth-desai-849a23191/" taget="_blank">Krutarth Desai</a></span>
+
     </section>
     <section class="blog">
         <div class="list-group">
             <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
                 <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-2"><i class="fas fa-pen-alt"></i>List group item heading</h5>
-                    <small>3 days ago</small>
+                    <h5 class="mb-2"><i class="fas fa-pen-alt"></i>BMI Calculator App</h5>
+                    <small>17 Nov'2020</small>
                 </div>
-                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                <small>Donec id elit non mi porta.</small>
+                <p class="mb-1">BMI or Body Mass Index, in the Body Mass Index, is one of the most well-known methods ...</p>
+                <small>Read More...</small>
             </a>
+            <!--
             <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-between">
                     <h5 class="mb-2"><i class="fas fa-pen-alt"></i>List group item heading</h5>
@@ -101,6 +162,7 @@
                 <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
                 <small class="text-muted">Donec id elit non mi porta.</small>
             </a>
+            -->
         </div>
     </section>
 

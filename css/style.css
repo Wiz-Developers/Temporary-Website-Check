@@ -116,6 +116,7 @@ html, body {
 
 .navbar {
     padding: 0;
+    border-bottom: black;
 }
 
 .nav-img {
@@ -352,5 +353,30 @@ h2 {
 
     .firm-name {
         display: block;
+    }
+}
+
+/*general tags*/
+.center {
+    text-align: center;
+}
+
+/*iphone bug fix*/
+@supports (-webkit-overflow-scrolling: touch) {
+
+    /* CSS specific to iOS devices */
+    .smart-scroll {
+        position: fixed;
+        z-index: 1030;
+    }
+
+    .scrolled-up {
+        transform: translateY(-100%);
+        transition: all 1s ease-in-out;
+    }
+
+    .scrolled-down {
+        transform: translateY(0);
+        transition: all 1s ease-in-out;
     }
 }

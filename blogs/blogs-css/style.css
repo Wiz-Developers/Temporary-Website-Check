@@ -1,17 +1,113 @@
-html {
+html, body {
     font-family: "Ubuntu";
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 /*---Intro-----*/
-.title, .container-fluid, .navbar {
-    background-color: #0984e3;
+/*Load*/
+.not-hide, .not-hide {
+    background: #0984e3;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
-.nav-img {
-    width: 12%;
-    height: 12%;
-    padding: 0;
-    margin: 0;
+.bar {
+    position: relative;
+    height: 2px;
+    width: 50%;
+    margin: 0 auto;
+    background: #fff;
+    margin-top: 150px;
+}
+
+.circle {
+    position: absolute;
+    top: -30px;
+    margin-left: -30px;
+    height: 60px;
+    width: 60px;
+    left: 0;
+    background: #fff;
+    border-radius: 30%;
+    -webkit-animation: move 5s infinite;
+}
+
+.data-hide {
+    position: absolute;
+    top: -25px;
+    right: -85px;
+    text-transform: uppercase;
+    color: #0984e3;
+    font-family: helvetica, sans-serif;
+    font-weight: bold;
+}
+
+@-webkit-keyframes move {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: 100%;
+        -webkit-transform: rotate(450deg);
+        width: 150px;
+        height: 150px;
+    }
+
+    75% {
+        left: 100%;
+        -webkit-transform: rotate(450deg);
+        width: 150px;
+        height: 150px;
+    }
+
+    100 {
+        right: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .data-hide {
+        top: -25px;
+        right: -30%;
+    }
+
+    @-webkit-keyframes move {
+        0% {
+            left: 0;
+        }
+
+        50% {
+            left: 100%;
+            -webkit-transform: rotate(450deg);
+            width: 100px;
+            height: 100px;
+        }
+
+        75% {
+            left: 100%;
+            -webkit-transform: rotate(450deg);
+            width: 100px;
+            height: 100px;
+        }
+
+        100 {
+            right: 100%;
+        }
+    }
+}
+
+.hide {
+    display: none;
+}
+
+/*Load*/
+/*Nav Bar*/
+.title, .container-fluid, .navbar {
+    background-color: #0984e3;
 }
 
 .container-fluid {
@@ -20,6 +116,12 @@ html {
 
 .navbar {
     padding: 0;
+    border-bottom: black;
+}
+
+.nav-img {
+    width: 80%;
+    height: 20%;
 }
 
 .navbar-brand {
@@ -55,6 +157,133 @@ html {
     transition: all 1s ease-in-out;
 }
 
+/*---Intro-----*/
+.intro {
+    padding: 14% 15% 7%;
+}
+
+.small-hide {
+    display: none;
+}
+
+@media (max-width: 1025px) {
+    .intro {
+        padding-top: 12%;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .intro {
+        padding-top: 15%;
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .nav-img {
+        display: none;
+    }
+
+    .small-hide {
+        display: inline;
+    }
+}
+
+.intro-line {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.intro-2 {
+    padding: 0 15% 7%;
+    text-align: center;
+}
+
+/*other intro-2 styles at last to overide existing styles*/
+/*---Features---*/
+.features {
+    padding: 7% 15% 7% 15%;
+    background-color: #dfe6e9;
+    position: relative;
+    z-index: 1;
+}
+
+.fea {
+    font-weight: bold;
+    text-align: center;
+}
+
+.fea-p {
+    text-align: center;
+    padding: 5%;
+    color: grey;
+}
+
+.fea-in {
+    display: inline;
+}
+
+.st {
+    text-align: center;
+    size: 50%;
+    padding-bottom: 1rem;
+    color: #74b9ff;
+}
+
+.fas:hover {
+    color: #0984e3;
+}
+
+/*testimonial*/
+.testimonials {
+    background-color: #0984e3;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 550;
+    line-height: 3.5rem;
+    font-size: 2rem;
+}
+
+.testimonials-text {
+    font-size: 1.5rem;
+}
+
+.services {
+    padding-bottom: 2%;
+}
+
+.test-img {
+    margin: 20px;
+}
+
+.carousel-item {
+    padding: 7% 15% 7% 15%;
+}
+
+/*--download--*/
+.download {
+    background-color: #dfe6e9;
+    text-align: center;
+    padding: 7% 15% 7% 15%;
+}
+
+.down-text {
+    color: black;
+    font-weight: bold;
+}
+
 /*--footer--*/
 .footer {
     background-color: #0984e3;
@@ -77,4 +306,52 @@ html {
 
 .f-f {
     padding: 1%;
+}
+
+/*Intro 2*/
+.wiz-h1 {
+    font-weight: bold;
+    padding-bottom: 0;
+}
+
+.wiz-h2 {
+    font-size: 2rem;
+    font-weight: 650;
+    padding-bottom: 3%;
+}
+
+.red {
+    color: #DC143C;
+}
+
+.white {
+    font-size: 1.5rem;
+    font-weight: 550;
+    color: white;
+}
+
+@media (max-width: 900px) {
+    .left1 {
+        text-align: left;
+    }
+
+    .right1 {
+        text-align: left;
+    }
+
+    .right2 {
+        text-align: right;
+    }
+
+    .left2 {
+        text-align: right;
+    }
+
+    .red {
+        display: block;
+    }
+
+    .firm-name {
+        display: block;
+    }
 }
