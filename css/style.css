@@ -244,11 +244,11 @@ html, body {
     text-align: center;
     size: 50%;
     padding-bottom: 1rem;
-    color: #74b9ff;
+    color: #0984e3;
 }
 
 .fas:hover {
-    color: #0984e3;
+    color: purple;
 }
 
 /*testimonial*/
