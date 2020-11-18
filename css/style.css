@@ -164,6 +164,10 @@ html, body {
     display: none;
 }
 
+.img-hide {
+    display: none;
+}
+
 @media (max-width: 1025px) {
     .intro {
         padding-top: 12%;
@@ -177,6 +181,9 @@ html, body {
 @media (max-width: 900px) {
     .intro {
         padding-top: 15%;
+        font-weight: 500;
+        font-size: 1.75rem;
+        line-height: 2rem;
     }
 
     .navbar-brand {
@@ -203,6 +210,10 @@ html, body {
     padding: 0 15% 7% 15%;
     text-align: center;
     color: black;
+}
+
+.mobile-show {
+    display: none;
 }
 
 /*other intro-2 styles at last to overide existing styles*/
@@ -428,5 +439,48 @@ h2 {
 
     100% {
         background-position: 0 50%;
+    }
+}
+
+/*Small changes on mobile view*/
+@media (max-width: 900px) {
+    .mobile-show {
+        display: block;
+    }
+
+    .intro {
+        padding-top: 20%;
+        font-weight: 500;
+        font-size: 1.75rem;
+        line-height: 2rem;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .img-hide {
+        text-align: center;
+        display: inline;
+        width: 80%;
+    }
+
+    .wiz-h2 {
+        font-weight: 600;
+        font-size: 1.11rem;
+    }
+
+    .wiz-h2-part1 {
+        padding-top: 10%;
+    }
+
+    .wiz-h2-help {
+        padding-bottom: 10%;
+    }
+
+    .testimonial-text {
+        font-weight: 500;
+        font-size: 1.75rem;
+        line-height: 2rem;
     }
 }

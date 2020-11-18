@@ -16,6 +16,12 @@
     width: 20%;
 }
 
+@media (max-width: 900px) {
+    .image {
+        width: 50%;
+    }
+}
+
 h3 {
     padding-top: 2%;
 }
