@@ -1,6 +1,11 @@
 /*---Packages-----*/
-.Packages {
+.Packages-1 {
     padding: 17% 15% 3%;
+    text-align: center;
+}
+
+.Packages {
+    padding: 0 15% 3%;
     text-align: center;
 }
 
