@@ -5,10 +5,12 @@ function fun() {
 function func() {
     var x = document.querySelector(".bar");
     var y = document.querySelector(".hide");
+    var z = document.querySelector(".circle");
     var a = document.querySelector("body");
     var b = document.querySelector("html");
-    x.classList.toggle("hide");
     y.classList.toggle("hide");
+    x.classList.toggle("hide");
+    z.classList.toggle("hide");
     a.classList.toggle("not-hide");
     b.classList.toggle("not-hide");
 }

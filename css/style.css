@@ -105,18 +105,16 @@ html, body {
 }
 
 /*Load*/
-/*Nav Bar*/
+/*Nav Bar
 .title, .container-fluid, .navbar {
     background-color: #0984e3;
-}
-
+}*/
 .container-fluid {
     padding: 3% 15% 3%;
 }
 
 .navbar {
     padding: 0;
-    border-bottom: black;
 }
 
 .nav-img {
@@ -210,7 +208,7 @@ html, body {
 /*---Features---*/
 .features {
     padding: 7% 15% 7% 15%;
-    background-color: #dfe6e9;
+    background-color: white;
     position: relative;
     z-index: 1;
 }
@@ -274,7 +272,7 @@ h2 {
 
 /*--download--*/
 .download {
-    background-color: #dfe6e9;
+    background-color: white;
     text-align: center;
     padding: 7% 15% 7% 15%;
 }
@@ -356,6 +354,12 @@ h2 {
     }
 }
 
+@media (max-width: 700px) {
+    .intro {
+        padding-top: 20%;
+    }
+}
+
 /*general tags*/
 .center {
     text-align: center;
@@ -378,5 +382,41 @@ h2 {
     .scrolled-down {
         transform: translateY(0);
         transition: all 1s ease-in-out;
+    }
+}
+
+/*CSS trnastions ripple effect*/
+.apply {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 15s ease infinite;
+    animation: gradient 15s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+    0 {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+@keyframes gradient {
+    0 {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
     }
 }
